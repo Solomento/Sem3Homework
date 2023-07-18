@@ -1,0 +1,15 @@
+C:\Users\alexd\OneDrive\Рабочий стол\Sem3\Sem3Homework\obj\Debug\net6.0\Sem3Homework.csproj.AssemblyReference.cache
+C:\Users\alexd\OneDrive\Рабочий стол\Sem3\Sem3Homework\obj\Debug\net6.0\Sem3Homework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexd\OneDrive\Рабочий стол\Sem3\Sem3Homework\obj\Debug\net6.0\Sem3Homework.AssemblyInfoInputs.cache
+C:\Users\alexd\OneDrive\Рабочий стол\Sem3\Sem3Homework\obj\Debug\net6.0\Sem3Homework.AssemblyInfo.cs
+C:\Users\alexd\OneDrive\Рабочий стол\Sem3\Sem3Homework\obj\Debug\net6.0\Sem3Homework.csproj.CoreCompileInputs.cache
+C:\Users\alexd\OneDrive\Рабочий стол\Sem3\Sem3Homework\bin\Debug\net6.0\Sem3Homework.exe
+C:\Users\alexd\OneDrive\Рабочий стол\Sem3\Sem3Homework\bin\Debug\net6.0\Sem3Homework.deps.json
+C:\Users\alexd\OneDrive\Рабочий стол\Sem3\Sem3Homework\bin\Debug\net6.0\Sem3Homework.runtimeconfig.json
+C:\Users\alexd\OneDrive\Рабочий стол\Sem3\Sem3Homework\bin\Debug\net6.0\Sem3Homework.dll
+C:\Users\alexd\OneDrive\Рабочий стол\Sem3\Sem3Homework\bin\Debug\net6.0\Sem3Homework.pdb
+C:\Users\alexd\OneDrive\Рабочий стол\Sem3\Sem3Homework\obj\Debug\net6.0\Sem3Homework.dll
+C:\Users\alexd\OneDrive\Рабочий стол\Sem3\Sem3Homework\obj\Debug\net6.0\refint\Sem3Homework.dll
+C:\Users\alexd\OneDrive\Рабочий стол\Sem3\Sem3Homework\obj\Debug\net6.0\Sem3Homework.pdb
+C:\Users\alexd\OneDrive\Рабочий стол\Sem3\Sem3Homework\obj\Debug\net6.0\Sem3Homework.genruntimeconfig.cache
+C:\Users\alexd\OneDrive\Рабочий стол\Sem3\Sem3Homework\obj\Debug\net6.0\ref\Sem3Homework.dll
