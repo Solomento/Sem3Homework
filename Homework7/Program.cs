@@ -1,36 +1,164 @@
-﻿//Задайте двумерный массив размером m×n, заполненный случайными 
+﻿/*//Задайте двумерный массив размером m×n, заполненный случайными 
 //вещественными числами.
 
-double[,] CreateRandom2DArray(int rows, int columns, double minValue, double maxValue)
+void mas(int m, int n)
 {
-    double[,] array = new double[rows, columns];
-
-    for(int i = 0; i < rows; i++)
+    double[,] randomArray = new double[m,n];
+    Random rand = new Random();
+    for (int i = 0; i < m; i++)
     {
-        for(int j = 0; j < columns; j++)
-            array[i,j] = new Random().NextDouble(minValue, maxValue + 1);
+    Console.WriteLine();
+        for (int j = 0; j < n; j++)
+        {
+        randomArray[i,j] = (double)rand.Next(-100,100)/10;
+        Console.Write(randomArray[i,j] + "\t");
+        }
+
     }
-    return array;
+
 }
 
-void Show2DArray(double[,] array)
+Console.Write("Введите количество строк массива: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите количество столбцов массива: ");
+int n = Convert.ToInt32(Console.ReadLine());
+
+mas(m,n);*/
+
+
+
+/*// Напишите программу, которая на вход принимает позиции элемента в 
+// двумерном массиве, и возвращает значение этого элемента или же 
+// указание, что такого элемента нет.
+
+
+void mas(double[,] randomArray, int rows, int colums)
 {
-    for(int i = 0; i < array.GetLength(0); i++)
+    Random rand = new Random();
+    for (int i = 0; i < rows; i++)
     {
-        for(int j = 0; j < array.GetLength(1); j++)
-            Console.Write(array[i,j] + "  ");
+    Console.WriteLine();
+        for (int j = 0; j < colums; j++)
+        {
+        randomArray[i,j] = (double)rand.Next(-100,100)/10;
+        Console.Write(randomArray[i,j] + "\t");
+        }
+
+    }
+
+}
+void FindValue(double[,] array, int rows, int colums, int iUser, int jUser)
+{
+    if(iUser < 0 || jUser < 0) Console.Write("Значение индексов не могут быть отрицательными! \t");
+    if(iUser <= rows-1 && jUser <= colums-1) Console.Write($"Значение элемента в ячейке с заданными индексами {iUser}, {jUser}: {array[iUser,jUser]:F1}");
+    else Console.Write("Такого элемента в массиве нет!");
+}
+
+
+Console.Write("Введите количество строк массива: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите количество столбцов массива: ");
+int n = Convert.ToInt32(Console.ReadLine());
+double[,] randomArray = new double[m,n];
+mas(randomArray, m, n);
+Console.WriteLine("\n");
+
+Console.Write("Введите индекс строки: ");
+int iUser = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите индекс столбца: ");
+int jUser = Convert.ToInt32(Console.ReadLine());
+
+FindValue(randomArray, m, n, iUser, jUser);
+
+// if(iUser < 0 || jUser < 0) Console.Write("Значение индексов не могут быть отрицательными! \t");
+// if(iUser <= m-1 && jUser <= n-1) Console.Write($"Значение элемента в ячейке с заданными индексами {iUser}, {jUser}: {randomArray[iUser,jUser]:F1}");
+// else Console.Write("Такого элемента в массиве нет!");*/
+
+
+/*//Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+
+void mas(int[,] array, int rows, int colums)
+{
+    Random rand = new Random();
+    for (int i = 0; i < rows; i++)
+    {
+    Console.WriteLine();
+        for (int j = 0; j < colums; j++)
+        {
+        array[i,j] = rand.Next(1,9);
+        Console.Write(array[i,j] + "\t");
+        }
+
+    }
+
+}
+
+void Avg(int[,] array)                                                                  
+{
+    Console.Write("Среднее арифметическое каждого столбца: ");
+    double sum = 0;
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+            sum += array[i,j];
+            }
+        
+        Console.Write($"{sum / array.GetLength(1):F1} \t");
+    }
+}
+
+
+Console.Write("Введите количество строк массива: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите количество столбцов массива: ");
+int n = Convert.ToInt32(Console.ReadLine());
+int[,] randomArray = new int[m,n];
+
+mas(randomArray, m, n);
+Console.WriteLine("\n");
+
+Avg(randomArray);*/
+
+
+/*Console.Write("Введите размерность m массива: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите размерность n массива: ");
+int n = Convert.ToInt32(Console.ReadLine());
+int[,] randomArray = new int[m,n];
+
+void mas(int m, int n)
+{
+    int i,j;
+    Random rand = new Random();
+    for (i = 0; i < m; i++)
+    {
+    Console.WriteLine();
+        for (j = 0; j < n; j++)
+        {
+        randomArray[i,j] = rand.Next(1,9);
+        Console.Write($"{randomArray[i,j]} ");
+        }
         Console.WriteLine();
     }
 }
 
-Console.Write("Введите колличество строк: ");
-int rows = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите колличество столбцов: ");
-int columns = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите минимальное значение: ");
-double min = Convert.ToDouble(Console.ReadLine());
-Console.Write("Введите максимальное значение: ");
-double max = Convert.ToDouble(Console.ReadLine());
+void arif(int m, int n)
+{
+    Console.Write("Среднее арифметическое каждого столбца: ");
+    int i,j;
+    Random rand = new Random();
+    for (j = 0; j < n; j++)
+    {
+    double sum = 0;
+        for (i = 0; i < m; i++)
+        {
+        sum = sum + randomArray[i,j];
+        }
+        Console.Write($"{sum/(i):F1}; ");
+    }
+}
 
-double[,] myArray = CreateRandom2DArray(rows, columns, min, max);
-Show2DArray(myArray);
+mas(m,n);
+
+arif(m,n);*/
