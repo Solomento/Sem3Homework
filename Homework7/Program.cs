@@ -75,17 +75,17 @@ FindValue(randomArray, m, n, iUser, jUser);
 // else Console.Write("Такого элемента в массиве нет!");*/
 
 
-/*//Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+//Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 
 
-//Мой метод
+/*//Мой метод
 
 void mas(int[,] array, int rows, int colums)
 {
     Random rand = new Random();
     for (int i = 0; i < rows; i++)
     {
-    Console.WriteLine();
+        Console.WriteLine();
         for (int j = 0; j < colums; j++)
         {
         array[i,j] = rand.Next(1,9);
@@ -99,15 +99,15 @@ void mas(int[,] array, int rows, int colums)
 void Avg(int[,] array)                                                                  
 {
     Console.Write("Среднее арифметическое каждого столбца: ");
-    double sum = 0;
     for (int j = 0; j < array.GetLength(1); j++)
     {
-            for (int i = 0; i < array.GetLength(0); i++)
-            {
+        double sum = 0;
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
             sum += array[i,j];
-            }
-        
-        Console.Write($"{sum / array.GetLength(1):F1} \t");
+        }
+        //Console.Write($"{array.GetLength(1)} \n");
+        Console.Write($"{sum / array.GetLength(0):F1} \t"); //если нужно найти среднее арифметическое столбца, надо делить на количество строк(НЕ СТОЛБЦОВ!!!)
     }
 }
 
@@ -156,7 +156,7 @@ void arif(int m, int n)
     Random rand = new Random();
     for (j = 0; j < n; j++)
     {
-    double sum = 0;
+        double sum = 0;
         for (i = 0; i < m; i++)
         {
         sum = sum + randomArray[i,j];
