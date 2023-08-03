@@ -77,6 +77,9 @@ FindValue(randomArray, m, n, iUser, jUser);
 
 /*//Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 
+
+//Мой метод
+
 void mas(int[,] array, int rows, int colums)
 {
     Random rand = new Random();
@@ -121,7 +124,10 @@ Console.WriteLine("\n");
 Avg(randomArray);*/
 
 
-/*Console.Write("Введите размерность m массива: ");
+
+/*//Метод из интернета
+
+Console.Write("Введите размерность m массива: ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите размерность n массива: ");
 int n = Convert.ToInt32(Console.ReadLine());
